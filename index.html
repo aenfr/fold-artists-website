@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fold Artists — AI Attribution Infrastructure for Music</title>
+    <meta name="description" content="Fold Artists builds AI attribution infrastructure. LUMINA reads the Causal DNA inside AI models to prove which artists caused every generated song, down to the percentage.">
+    <link rel="icon" href="assets/fold-artists-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="assets/fold-artists-logo.png" alt="Fold Artists" class="nav-logo-img">
+                <span class="nav-logo-text">Fold Artists</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#mission" class="nav-link">Mission</a>
+                <a href="#lumina" class="nav-link">LUMINA</a>
+                <a href="#market" class="nav-link">Market</a>
+                <a href="#leadership" class="nav-link">Leadership</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#traction" class="nav-link">Traction</a>
+                <a href="#contact" class="nav-cta">Request Access</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-gradient-orb hero-orb-1"></div>
+            <div class="hero-gradient-orb hero-orb-2"></div>
+            <div class="hero-gradient-orb hero-orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal">
+                Every AI song has<br>
+                <span class="hero-title-gradient">creators behind it.</span><br>
+                Now you can prove it.
+            </h1>
+            <p class="hero-subtitle reveal">
+                Every AI model carries Causal DNA, a trace of every song it learned from.
+                LUMINA reads it. <span class="text-lumina">You see who caused what,</span> down to the percentage.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Schedule a Briefing</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <a href="#lumina" class="btn btn-ghost">
+                    <span>See How It Works</span>
+                </a>
+            </div>
+            <div class="hero-trust reveal">
+                <span class="trust-label">Strategic Partners</span>
+                <div class="trust-logos">
+                    <span class="trust-item">William Morris Endeavor</span>
+                    <span class="trust-divider"></span>
+                    <span class="trust-item">Berklee College of Music</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="section section-mission" id="mission">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">The Problem We Solve</span>
+                <h2 class="section-title">
+                    AI trains on copyrighted music.
+                    <br><span class="text-gradient">Nobody gets paid.</span>
+                </h2>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-card reveal" style="--delay: 0">
+                    <div class="mission-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>The Problem</h3>
+                    <p>Generative AI models use millions of copyrighted songs to train. Artists receive no credit and no compensation. Legal disputes are stacking up with no resolution.</p>
+                </div>
+                <div class="mission-card reveal" style="--delay: 1">
+                    <div class="mission-card-icon icon-orange">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                    <h3>What We Built</h3>
+                    <p>Every AI model carries Causal DNA, traces of what it learned from. LUMINA reads that DNA during generation and identifies which training data caused the output.</p>
+                </div>
+                <div class="mission-card reveal" style="--delay: 2">
+                    <div class="mission-card-icon icon-crimson">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>What Changes</h3>
+                    <p>Every AI-generated song triggers a royalty payment. Rights holders see exactly who contributed and how much. Revenue flows automatically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LUMINA PRODUCT -->
+    <section class="section section-lumina" id="lumina">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">The Product</span>
+                <h2 class="section-title">
+                    LUMINA<br>
+                    <span class="text-gradient">Reads the Causal DNA inside AI.</span>
+                </h2>
+                <p class="section-desc">Other tools compare how songs sound. LUMINA reads the AI model itself to prove which training data caused the output. We call this Causal DNA.</p>
+            </div>
+
+            <div class="lumina-showcase">
+                <div class="lumina-visual reveal">
+                    <div class="attribution-demo">
+                        <div class="demo-header">
+                            <span class="demo-dot green"></span>
+                            <span class="demo-dot yellow"></span>
+                            <span class="demo-dot red"></span>
+                            <span class="demo-title">LUMINA Attribution Engine v3.2</span>
+                        </div>
+                        <div class="demo-body">
+                            <div class="demo-input">
+                                <code class="demo-code">
+                                    <span class="code-comment">// Generated track: "Neon Echoes", Grunge-Pop Fusion</span><br>
+                                    <span class="code-keyword">analyzing</span> gradient_signatures...<br>
+                                    <span class="code-keyword">comparing</span> training_influence_vectors...<br>
+                                    <span class="code-keyword">computing</span> causal_attribution_scores...
+                                </code>
+                            </div>
+                            <div class="demo-results">
+                                <div class="demo-result-header">Attribution Results</div>
+                                <div class="attribution-bar" data-artist="Nirvana" data-pct="22.42">
+                                    <div class="attr-label">
+                                        <span class="attr-name">Nirvana</span>
+                                        <span class="attr-pct">22.42%</span>
+                                    </div>
+                                    <div class="attr-track"><div class="attr-fill orange" style="--target-width: 22.42%"></div></div>
+                                </div>
+                                <div class="attribution-bar" data-artist="Sinatra" data-pct="12.67">
+                                    <div class="attr-label">
+                                        <span class="attr-name">Frank Sinatra</span>
+                                        <span class="attr-pct">12.67%</span>
+                                    </div>
+                                    <div class="attr-track"><div class="attr-fill crimson" style="--target-width: 12.67%"></div></div>
+                                </div>
+                                <div class="attribution-bar" data-artist="Radiohead" data-pct="9.31">
+                                    <div class="attr-label">
+                                        <span class="attr-name">Radiohead</span>
+                                        <span class="attr-pct">9.31%</span>
+                                    </div>
+                                    <div class="attr-track"><div class="attr-fill blue" style="--target-width: 9.31%"></div></div>
+                                </div>
+                                <div class="attribution-bar" data-artist="Bowie" data-pct="7.88">
+                                    <div class="attr-label">
+                                        <span class="attr-name">David Bowie</span>
+                                        <span class="attr-pct">7.88%</span>
+                                    </div>
+                                    <div class="attr-track"><div class="attr-fill blue-light" style="--target-width: 7.88%"></div></div>
+                                </div>
+                                <div class="attribution-bar" data-artist="Others" data-pct="47.72">
+                                    <div class="attr-label">
+                                        <span class="attr-name">1,247 additional artists</span>
+                                        <span class="attr-pct">47.72%</span>
+                                    </div>
+                                    <div class="attr-track"><div class="attr-fill muted" style="--target-width: 47.72%"></div></div>
+                                </div>
+                                <div class="demo-confidence">
+                                    <span class="confidence-badge">Confidence: 97.3%</span>
+                                    <span class="confidence-badge">Latency: 142ms</span>
+                                    <span class="confidence-badge">Model: ACE-STEP v1.5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lumina-features">
+                    <div class="lumina-feature reveal" style="--delay: 0">
+                        <div class="feature-number">01</div>
+                        <h3>Causal DNA Extraction</h3>
+                        <p>LUMINA captures a model's internal data and compares it against pre-computed training signatures. The Causal DNA tells you exactly who influenced the output.</p>
+                    </div>
+                    <div class="lumina-feature reveal" style="--delay: 1">
+                        <div class="feature-number">02</div>
+                        <h3>Exact Influence Scores</h3>
+                        <p>You see the precise percentage each rights holder caused. 22.42% Nirvana, 12.67% Sinatra. Proven by the math, not estimated.</p>
+                    </div>
+                    <div class="lumina-feature reveal" style="--delay: 2">
+                        <div class="feature-number">03</div>
+                        <h3>Automatic Royalty Payments</h3>
+                        <p>Attribution triggers licensing fees at the moment of creation. Payments flow through a distributed ledger that any party can verify.</p>
+                    </div>
+                    <div class="lumina-feature reveal" style="--delay: 3">
+                        <div class="feature-number">04</div>
+                        <h3>Beyond Music</h3>
+                        <p>Music is our first market. The same technology applies to video, images, and text. Any generative model that trains on copyrighted data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARKET -->
+    <section class="section section-market" id="market">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Market Size</span>
+                <h2 class="section-title">
+                    A <span class="text-gradient">$1.3 trillion</span> industry
+                    needs attribution infrastructure.
+                </h2>
+            </div>
+            <div class="market-grid">
+                <div class="market-card reveal" style="--delay: 0">
+                    <div class="market-value" data-target="1.3" data-suffix="T" data-prefix="$">$0</div>
+                    <div class="market-label">Generative AI Total</div>
+                    <div class="market-detail">by 2032 &middot; Bloomberg</div>
+                </div>
+                <div class="market-card reveal" style="--delay: 1">
+                    <div class="market-value" data-target="16" data-suffix="B" data-prefix="&euro;">&#8364;0</div>
+                    <div class="market-label">Gen-AI Music Market</div>
+                    <div class="market-detail">by 2028 &middot; CISAC</div>
+                </div>
+                <div class="market-card reveal" style="--delay: 2">
+                    <div class="market-value" data-target="31.4" data-suffix="B" data-prefix="$">$0</div>
+                    <div class="market-label">Recorded Music Industry</div>
+                    <div class="market-detail">2025 &middot; Goldman Sachs</div>
+                </div>
+                <div class="market-card reveal" style="--delay: 3">
+                    <div class="market-value" data-target="13" data-suffix="B" data-prefix="$">$0</div>
+                    <div class="market-label">Music Publishing</div>
+                    <div class="market-detail">2029 &middot; OMDIA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section class="section section-leadership" id="leadership">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Leadership</span>
+                <h2 class="section-title">
+                    <span class="text-gradient">30 years of music industry</span>
+                    experience, backed by world-class engineering.
+                </h2>
+            </div>
+
+            <div class="leadership-group">
+                <h3 class="leadership-group-title reveal">Executive Team</h3>
+                <div class="leaders-grid">
+                    <div class="leader-card reveal" style="--delay: 0">
+                        <div class="leader-avatar">
+                            <div class="avatar-placeholder">ER</div>
+                        </div>
+                        <div class="leader-info">
+                            <h4 class="leader-name">Eric Reithler-Barros</h4>
+                            <span class="leader-role">Chief Executive Officer</span>
+                            <p class="leader-bio">30+ years in the music business. Former VP at SFX Entertainment ($1.4B). Professor at Berklee College of Music.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card reveal" style="--delay: 1">
+                        <div class="leader-avatar">
+                            <div class="avatar-placeholder">UB</div>
+                        </div>
+                        <div class="leader-info">
+                            <h4 class="leader-name">Ulf Baumann</h4>
+                            <span class="leader-role">Chief Technology Officer</span>
+                            <p class="leader-bio">Serial entrepreneur. Led $2B in Cisco-AWS partnerships. MIT-educated engineer.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card reveal" style="--delay: 2">
+                        <div class="leader-avatar">
+                            <div class="avatar-placeholder">PD</div>
+                        </div>
+                        <div class="leader-info">
+                            <h4 class="leader-name">Peter Dyson</h4>
+                            <span class="leader-role">COO / Legal</span>
+                            <p class="leader-bio">Top London IP attorney. Specializes in music and media law, high-stakes arbitration.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card reveal" style="--delay: 3">
+                        <div class="leader-avatar">
+                            <div class="avatar-placeholder">AC</div>
+                        </div>
+                        <div class="leader-info">
+                            <h4 class="leader-name">&Aacute;nfer Ch&aacute;vez</h4>
+                            <span class="leader-role">Senior Solutions Architect</span>
+                            <p class="leader-bio">Designs and builds the core LUMINA infrastructure. Leads technical architecture across ML pipelines, attribution engines, and platform integrations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leadership-group">
+                <h3 class="leadership-group-title reveal">Advisory Board</h3>
+                <div class="advisors-grid">
+                    <div class="advisor-card reveal" style="--delay: 0">
+                        <h4 class="advisor-name">Scott Cohen</h4>
+                        <p class="advisor-role">Co-founded The Orchard. Former Chief Innovation Officer at Warner Music Group.</p>
+                    </div>
+                    <div class="advisor-card reveal" style="--delay: 1">
+                        <h4 class="advisor-name">Rob Dickins C.B.E.</h4>
+                        <p class="advisor-role">Former Chairman of Warner Music UK. Signed Madonna, Enya, and Cher.</p>
+                    </div>
+                    <div class="advisor-card reveal" style="--delay: 2">
+                        <h4 class="advisor-name">Paul Brindley</h4>
+                        <p class="advisor-role">CEO of Music Ally, the music industry's leading intelligence firm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section-ecosystem" id="how-it-works">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">
+                    Three steps. <span class="text-gradient">Infringement becomes revenue.</span>
+                </h2>
+                <p class="section-desc">LUMINA sits inside AI music platforms. Every time a song is generated, rights holders get identified and paid.</p>
+            </div>
+
+            <div class="ecosystem-flow">
+                <div class="eco-step reveal" style="--delay: 0">
+                    <div class="eco-step-number">1</div>
+                    <div class="eco-step-content">
+                        <h3>Embed</h3>
+                        <p>LUMINA installs directly into Gen-AI platforms like Suno and Udio. It runs at the generation layer, in real time.</p>
+                    </div>
+                </div>
+                <div class="eco-connector reveal">
+                    <svg width="40" height="24" viewBox="0 0 40 24" fill="none"><path d="M0 12h36m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="eco-step reveal" style="--delay: 1">
+                    <div class="eco-step-number">2</div>
+                    <div class="eco-step-content">
+                        <h3>Attribute</h3>
+                        <p>For every generated song, LUMINA identifies which labels, publishers, and artists contributed to the output.</p>
+                    </div>
+                </div>
+                <div class="eco-connector reveal">
+                    <svg width="40" height="24" viewBox="0 0 40 24" fill="none"><path d="M0 12h36m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="eco-step reveal" style="--delay: 2">
+                    <div class="eco-step-number">3</div>
+                    <div class="eco-step-content">
+                        <h3>Pay</h3>
+                        <p>AI platforms pay licensing fees. Rights holders receive royalties automatically through a verifiable distributed ledger.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRACTION -->
+    <section class="section section-traction" id="traction">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Traction</span>
+                <h2 class="section-title">
+                    In active talks with
+                    <span class="text-gradient">Universal, Sony, and Warner.</span>
+                </h2>
+                <p class="section-desc">Plus RIAA, NMPA, and BMI.</p>
+            </div>
+
+            <div class="funding-timeline">
+                <div class="timeline-track"></div>
+                <div class="timeline-item completed reveal" style="--delay: 0">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-status">Closed</span>
+                        <h3>Pre-Seed 1</h3>
+                        <div class="timeline-amount">$1.78M</div>
+                        <span class="timeline-date">January 2025</span>
+                    </div>
+                </div>
+                <div class="timeline-item completed reveal" style="--delay: 1">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-status">Closed</span>
+                        <h3>Pre-Seed 2</h3>
+                        <div class="timeline-amount">$2.3M</div>
+                        <span class="timeline-date">December 2025</span>
+                    </div>
+                </div>
+                <div class="timeline-item active reveal" style="--delay: 2">
+                    <div class="timeline-marker pulse"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-status status-active">Targeting</span>
+                        <h3>Seed Round</h3>
+                        <div class="timeline-amount highlight">$11.0M</div>
+                        <span class="timeline-date">February 2026</span>
+                        <p class="timeline-focus">Product scaling, IP expansion, global hiring.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper reveal">
+                <div class="contact-content">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">
+                        See the prototype.
+                        <span class="text-gradient">Talk to the team.</span>
+                    </h2>
+                    <p class="contact-note">Live demo available by appointment.</p>
+                    <div class="contact-actions">
+                        <a href="mailto:info@foldartists.com" class="btn btn-primary btn-lg">
+                            <span>Schedule a Briefing</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                        <a href="mailto:investors@foldartists.com" class="btn btn-ghost btn-lg">
+                            <span>Investor Relations</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-locations">
+                    <div class="location-grid">
+                        <div class="location">
+                            <span class="location-city">Wilmington, DE</span>
+                            <span class="location-type">HQ</span>
+                        </div>
+                        <div class="location">
+                            <span class="location-city">New York City</span>
+                            <span class="location-type">Operations</span>
+                        </div>
+                        <div class="location">
+                            <span class="location-city">London</span>
+                            <span class="location-type">Legal &amp; IP</span>
+                        </div>
+                        <div class="location">
+                            <span class="location-city">Valencia</span>
+                            <span class="location-type">Engineering</span>
+                        </div>
+                        <div class="location">
+                            <span class="location-city">Hyderabad</span>
+                            <span class="location-type">ML Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <img src="assets/fold-artists-logo.png" alt="Fold Artists" class="footer-logo">
+                    <span class="footer-name">Fold Artists Inc.</span>
+                </div>
+                <div class="footer-legal">
+                    <span>&copy; 2025 Fold Artists Inc. All rights reserved.</span>
+                    <span class="footer-sep">&middot;</span>
+                    <span>Confidential</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
