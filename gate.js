@@ -45,8 +45,7 @@
     gate.innerHTML = `
       <div id="fold-gate-bg"></div>
       <div id="fold-gate-card">
-        <img id="fold-gate-logo" src="assets/fold-artists-logo.png" alt="Fold Artists" />
-        <h1 id="fold-gate-title">Fold Artists</h1>
+        <img id="fold-gate-logo" src="assets/fold-artists-wordmark.png" alt="Fold Artists" />
         <p id="fold-gate-sub">This site is confidential. Enter your access token to continue.</p>
         <form id="fold-gate-form" autocomplete="off">
           <input id="fold-gate-input" type="password" placeholder="Access token"

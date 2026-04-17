@@ -131,6 +131,28 @@ a { color: inherit; text-decoration: none; }
     border-radius: 6px;
 }
 
+.nav-logo-wordmark {
+    height: 44px;
+    width: auto;
+    max-width: none;
+    display: block;
+    flex-shrink: 0;
+}
+
+.footer-logo-wordmark {
+    height: 32px;
+    width: auto;
+    max-width: none;
+    display: block;
+    flex-shrink: 0;
+}
+
+.nav-logo-wordmark {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
 .nav-logo-text {
     font-weight: 700;
     font-size: 1.125rem;
