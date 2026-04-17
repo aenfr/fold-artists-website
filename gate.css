@@ -1,0 +1,150 @@
+/* Fold Artists access gate */
+#fold-gate {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: #FAF8F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#fold-gate.unlocked {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#fold-gate-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(212, 115, 17, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(168, 40, 40, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+#fold-gate-card {
+    position: relative;
+    max-width: 420px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #E0D8CC;
+    border-radius: 16px;
+    padding: 44px 40px 36px;
+    box-shadow: 0 24px 60px rgba(26, 22, 18, 0.08);
+    text-align: center;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+#fold-gate-logo {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 8px;
+}
+
+#fold-gate-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1A1612;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+}
+
+#fold-gate-sub {
+    font-size: 0.875rem;
+    color: #4A443C;
+    margin: 0 0 28px;
+    line-height: 1.5;
+}
+
+#fold-gate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#fold-gate-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    font-family: 'JetBrains Mono', monospace;
+    background: #FAF8F5;
+    border: 1px solid #E0D8CC;
+    border-radius: 10px;
+    color: #1A1612;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    text-align: center;
+}
+
+#fold-gate-input:focus {
+    border-color: #D47311;
+    box-shadow: 0 0 0 3px rgba(212, 115, 17, 0.12);
+}
+
+#fold-gate-input.error {
+    border-color: #A82828;
+    box-shadow: 0 0 0 3px rgba(168, 40, 40, 0.12);
+    animation: gate-shake 0.4s ease;
+}
+
+@keyframes gate-shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+}
+
+#fold-gate-submit {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    background: #1A1612;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+#fold-gate-submit:hover {
+    background: #4A443C;
+}
+
+#fold-gate-submit:active {
+    transform: translateY(1px);
+}
+
+#fold-gate-error {
+    font-size: 0.8rem;
+    color: #A82828;
+    min-height: 1.2em;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+#fold-gate-footer {
+    margin-top: 24px;
+    font-size: 0.7rem;
+    color: #8A8278;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+body.fold-gated {
+    overflow: hidden;
+}
+
+body.fold-gated main,
+body.fold-gated .navbar,
+body.fold-gated .hero,
+body.fold-gated .section,
+body.fold-gated .footer {
+    visibility: hidden;
+}
