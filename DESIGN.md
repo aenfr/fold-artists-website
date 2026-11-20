@@ -18,7 +18,7 @@ These three rules decide every layout. When in doubt, re-read them.
 Every hero (and the big statement sections) is built in three stacked planes that overlap:
 1. **Back plane (z 0)** — huge display type. On Home it is the H1 itself; on LUMINA it is the ghost word "LUMINA™".
 2. **Middle plane (z 1)** — the subject: the *Influence Field* canvas (corpus → threads → output waveform). Its threads cross *over* the back-plane letters (`mix-blend-mode: screen`), which is what creates depth.
-3. **Front plane (z 2)** — everything actionable or factual: tiny eyebrow, short body, CTAs, spec badges ("Patent pending", "Composition + recording", "Measured inside the model").
+3. **Front plane (z 2)** — everything actionable or factual: tiny eyebrow, short body, CTAs, spec badges ("Patent pending", "One influence ranking", "Measured inside the model").
 
 Overlap is intentional: the subject must sit across the type, and the buttons must sit across the subject's edge. A hero where the three planes don't touch is wrong.
 
