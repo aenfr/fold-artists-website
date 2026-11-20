@@ -146,7 +146,7 @@ Breakpoints 1240 · 1024 · 860 (nav) · 760 (1-col, light canvas) · 480. Touch
 | `/contact/` | H1 "Let's talk." | Home closing copy + form spec |
 
 ## Open items
-Applications copy (draft) · Ánfer's role/city · Rob/Ulf bios not marked approved · Silvia Montello bio missing · keep Phil Wiser? · real photos (monograms until then) · contact email (placeholder info@foldartists.com) · production domain for sitemap (placeholder https://foldmgt.com) · gate on ⇒ pages carry `noindex` until it comes off.
+Applications copy (draft) · Ánfer's role/city · Rob/Ulf bios not marked approved · Silvia Montello bio missing · keep Phil Wiser? · real photos (monograms until then) · contact email (placeholder info@foldartists.com) · production domain is https://foldartists.com (set 2026-11-20) · gate on ⇒ pages carry `noindex` until it comes off.
 
 ---
 
