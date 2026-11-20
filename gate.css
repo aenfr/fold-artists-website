@@ -26,7 +26,7 @@
     text-align: center;
     font-family: 'Inter', system-ui, sans-serif;
 }
-#fold-gate-logo { width: auto; height: 56px; opacity: .8; max-width: 220px; margin: 0 auto 28px; display: block; }
+#fold-gate-logo { width: auto; height: 56px; opacity: .9; max-width: 220px; margin: 0 auto 28px; display: block; }
 #fold-gate-sub { font-size: 0.875rem; color: #B4AFA6; margin: 0 0 24px; line-height: 1.55; }
 #fold-gate-form { display: flex; flex-direction: column; gap: 12px; }
 
