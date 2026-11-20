@@ -68,7 +68,7 @@
   }
 
   /* ---------- Influence Field (the subject, middle plane) ---------- */
-  var SPECTRUM = [[232, 130, 12], [242, 193, 78], [155, 227, 195], [143, 176, 255], [183, 155, 255]];
+  var SPECTRUM = [[220, 24, 40], [222, 176, 20], [155, 227, 195], [143, 176, 255], [183, 155, 255]];
   function spectrumAt(t) {
     t = Math.max(0, Math.min(0.9999, t)) * (SPECTRUM.length - 1);
     var i = Math.floor(t), f = t - i, a = SPECTRUM[i], b = SPECTRUM[i + 1];
