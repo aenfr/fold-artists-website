@@ -18,7 +18,7 @@ These three rules decide every layout. When in doubt, re-read them.
 Every hero (and the big statement sections) is built in three stacked planes that overlap:
 1. **Back plane (z 0)** — huge display type. On Home it is the H1 itself; on LUMINA it is the ghost word "LUMINA™".
 2. **Middle plane (z 1)** — the subject: the *Influence Field* canvas (corpus → threads → output waveform). Its threads cross *over* the back-plane letters (`mix-blend-mode: screen`), which is what creates depth.
-3. **Front plane (z 2)** — everything actionable or factual: tiny eyebrow, short body, CTAs, spec badges ("Patent pending", "One influence ranking", "Measured inside the model").
+3. **Front plane (z 2)** — short body copy and the CTAs. No badges or pills.
 
 Overlap is intentional: the subject must sit across the type, and the buttons must sit across the subject's edge. A hero where the three planes don't touch is wrong.
 
@@ -107,7 +107,6 @@ Disclosure controls (from the brief): no algorithm names, gradient/kernel maths,
 - **Text links**: `--signal`, underline 1px offset 3px, hover `--signal-hover`.
 - **Nav**: fixed, 64px; transparent → Void 85% + blur(12px) + bottom line after 24px scroll. Links `--ink-2`, hover `--ink`, current page `--ink` + 6px signal dot. "Request a briefing" = small primary button. < 860px: menu sheet, links huge (Rule 3), Esc closes, focus trapped.
 - **Panels**: `--surface`, 1px `--line`, radius 16px, pointer spotlight (ink, not signal, 5% alpha). Hover: `--line-strong`, `--surface-hover`. Non-clickable panels never turn signal.
-- **Spec badges** (front plane): 1px `--line-strong` pill, mono 11px, `--ink-2`. Not clickable → no signal.
 - **Person card**: grayscale portrait or monogram plate (huge initials in `--ink-ghost` on `--surface-alt` — Rule 1 in miniature), name tiny-bold, role/city mono, `<details>` "Read bio" in signal.
 - **Form**: inputs `--surface`, 1px `--line`, 48px, radius 10px; focus `--signal` border + 3px `rgba(var(--signal-rgb),.22)` ring. Inquiry type = segmented radio chips (selected chip = signal). `?inquiry=lumina` preselects "LUMINA Technical Evaluation". Backend: mailto fallback (one constant to swap).
 
@@ -160,4 +159,5 @@ Applications copy (draft) · Ánfer's role/city · Rob/Ulf bios not marked appro
 - Focus: inputs keep a transparent 2px outline (forced-colors) plus the signal ring; gate shake only under `prefers-reduced-motion: no-preference`.
 - Kept, with reason: the font Inter (brand-guidelines.md mandates it; lint `default-font` is info); `missing-wrap` info is a false positive (balance is set in styles.css); Peter Dyson's "world-class network" stays verbatim because Eric marked that bio approved (suppressed inline).
 - Kept: ghost words, three-plane heroes and the Influence Field canvas (signature move, per the composition rules above).
-- No eyebrows: the rule in §0 and §4 about mono labels now applies to badges, roles and form labels only, never to a line directly above a heading.
+- No eyebrows: the rule in §0 and §4 about mono labels now applies to roles and form labels only, never to a line directly above a heading.
+- 2026-11-20: removed all pill badges ("Patent pending", "One influence ranking", "Measured inside the model", research tags) at Anfer's request.

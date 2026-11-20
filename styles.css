@@ -122,12 +122,6 @@ a:hover { color: var(--signal-hover); }
 
 .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; }
 
-.badges { display: flex; flex-wrap: wrap; gap: 8px; }
-.badge {
-  font: 500 var(--micro)/1 var(--mono); letter-spacing: .08em; text-transform: uppercase;
-  color: var(--ink-2); padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line-strong);
-  background: rgba(var(--bg-rgb), .6);
-}
 
 /* ---------- Nav ---------- */
 .nav {
