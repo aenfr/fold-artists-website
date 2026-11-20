@@ -67,22 +67,6 @@
     setTimeout(function () { revealEls.forEach(function (el) { el.classList.add('in'); }); }, 2500);
   }
 
-  /* ---------- Panel pointer spotlight (rAF-throttled) ---------- */
-  if (canHover && !reduceMotion) {
-    var pending = null, frame = 0;
-    document.addEventListener('pointermove', function (e) {
-      var p = e.target.closest && e.target.closest('.panel');
-      if (!p) return;
-      pending = { p: p, x: e.clientX, y: e.clientY };
-      if (!frame) frame = requestAnimationFrame(function () {
-        frame = 0;
-        var r = pending.p.getBoundingClientRect();
-        pending.p.style.setProperty('--mx', (pending.x - r.left) + 'px');
-        pending.p.style.setProperty('--my', (pending.y - r.top) + 'px');
-      });
-    }, { passive: true });
-  }
-
   /* ---------- Influence Field (the subject, middle plane) ---------- */
   var SPECTRUM = [[232, 130, 12], [242, 193, 78], [155, 227, 195], [143, 176, 255], [183, 155, 255]];
   function spectrumAt(t) {

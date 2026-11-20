@@ -30,7 +30,7 @@ Everything else is ink and paper: near-black, graphite, warm white, greys.
 
 ### Rule 3 — Skip the middle sizes
 Two families of size, nothing in between:
-- **Huge**: display type (H1, H2, ghost words, the headline question) — Inter 800, ≥ 2.75rem on mobile, up to 9rem on desktop.
+- **Huge**: display type (H1, H2, ghost words, the headline question) — Inter 800, ≥ 2.75rem on mobile, H1 capped at 6rem so it stays ≤ 3 lines at 1440px.
 - **Tiny**: everything else — body 15px, metadata/labels 11–12px mono, nav 13px.
 No 18–28px "lead" paragraphs, no 20px card titles. Card titles are tiny-bold (15px, 600) or mono labels. Per screen, exactly one element is the huge one.
 
@@ -89,8 +89,8 @@ Disclosure controls (from the brief): no algorithm names, gradient/kernel maths,
 
 | Role | Font | Size | Weight | LH | Tracking |
 |------|------|------|--------|----|----------|
-| H1 / ghost (HUGE) | Inter | clamp(2.9rem, 9vw, 9rem) | 800 | 0.92 | -0.055em |
-| H2 / statement (HUGE) | Inter | clamp(2.4rem, 6vw, 5.5rem) | 800 | 0.95 | -0.045em |
+| H1 (HUGE) | Inter | clamp(2.75rem, 7vw, 6rem) | 800 | 0.95 | -0.04em |
+| H2 / statement (HUGE) | Inter | clamp(2.25rem, 4.8vw, 4.5rem) | 800 | 0.98 | -0.035em |
 | Body (tiny) | Inter | 0.9375rem | 400 | 1.65 | — |
 | Card title (tiny) | Inter | 0.9375rem | 600 | 1.4 | -0.005em |
 | Label / meta (tiny) | JetBrains Mono | 0.6875–0.75rem | 500 | 1.4 | 0.14em, uppercase |
@@ -148,3 +148,16 @@ Breakpoints 1240 · 1024 · 860 (nav) · 760 (1-col, light canvas) · 480. Touch
 
 ## Open items
 Applications copy (draft) · Ánfer's role/city · Rob/Ulf bios not marked approved · Silvia Montello bio missing · keep Avery Wang & Phil Wiser? · real photos (monograms until then) · contact email (placeholder info@foldartists.com) · production domain for sitemap (placeholder https://foldmgt.com) · gate on ⇒ pages carry `noindex` until it comes off.
+
+---
+
+## Decision log
+
+**2026-11-20 — antiwebslop pass** (lint `slop-lint.mjs`, cesaroeduardo/antiwebslop). Result: 0 errors, 0 warnings; 12 info left on purpose.
+- Removed: eyebrow labels above every heading, decorative 01/02/03 numbers and ghost numerals in panels, faded dot-grid behind the hero and gate, pointer spotlight on panels, animated border beam on the CTA panel, glass (blurred) nav → opaque.
+- Equal 3-up / 2-up audience cards → ruled rows (title | text).
+- Display tracking eased to ≥ -0.04em; H1 capped at 6rem; `text-wrap: balance` on display, `pretty` on body.
+- Focus: inputs keep a transparent 2px outline (forced-colors) plus the signal ring; gate shake only under `prefers-reduced-motion: no-preference`.
+- Kept, with reason: the font Inter (brand-guidelines.md mandates it; lint `default-font` is info); `missing-wrap` info is a false positive (balance is set in styles.css); Peter Dyson's "world-class network" stays verbatim because Eric marked that bio approved (suppressed inline).
+- Kept: ghost words, three-plane heroes and the Influence Field canvas (signature move, per the composition rules above).
+- No eyebrows: the rule in §0 and §4 about mono labels now applies to badges, roles and form labels only, never to a line directly above a heading.
