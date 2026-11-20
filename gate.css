@@ -3,7 +3,7 @@
     position: fixed;
     inset: 0;
     z-index: 99999;
-    background: #0A0A0F;
+    background: #0B0B0C;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@
     position: relative;
     max-width: 420px;
     width: 100%;
-    background: #111118;
+    background: #141416;
     border: 1px solid rgba(242, 237, 228, 0.1);
     border-radius: 16px;
     padding: 44px 36px 32px;
@@ -36,7 +36,7 @@
     padding: 12px 16px;
     font-size: 0.9375rem;
     font-family: 'JetBrains Mono', monospace;
-    background: #0A0A0F;
+    background: #0B0B0C;
     border: 1px solid rgba(242, 237, 228, 0.12);
     border-radius: 10px;
     color: #F2EDE4;
@@ -45,7 +45,7 @@
     text-align: center;
 }
 #fold-gate-input::placeholder { color: #75716B; }
-#fold-gate-input:focus { border-color: #7FA2FF; box-shadow: 0 0 0 3px rgba(127, 162, 255, 0.22); }
+#fold-gate-input:focus { border-color: #8FDCE6; box-shadow: 0 0 0 3px rgba(143, 220, 230, 0.22); }
 #fold-gate-input.error { border-color: #F08A7A; box-shadow: 0 0 0 3px rgba(240, 138, 122, 0.18); }
 @media (prefers-reduced-motion: no-preference) { #fold-gate-input.error { animation: gate-shake 0.4s ease; } }
 @keyframes gate-shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
@@ -57,15 +57,15 @@
     font-size: 0.875rem;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
-    background: #7FA2FF;
-    color: #0A0A0F;
+    background: #8FDCE6;
+    color: #0B0B0C;
     border: none;
     border-radius: 999px;
     cursor: pointer;
     transition: background 0.2s;
 }
-#fold-gate-submit:hover { background: #A9C0FF; }
-#fold-gate-submit:focus-visible { outline: 2px solid #7FA2FF; outline-offset: 3px; }
+#fold-gate-submit:hover { background: #BDEDF2; }
+#fold-gate-submit:focus-visible { outline: 2px solid #8FDCE6; outline-offset: 3px; }
 
 #fold-gate-error { font-size: 0.8rem; color: #F08A7A; min-height: 1.2em; margin-top: 4px; font-weight: 500; }
 #fold-gate-footer {

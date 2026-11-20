@@ -23,7 +23,7 @@ Every hero (and the big statement sections) is built in three stacked planes tha
 Overlap is intentional: the subject must sit across the type, and the buttons must sit across the subject's edge. A hero where the three planes don't touch is wrong.
 
 ### Rule 2 — One signal colour
-`--signal` (Lumina Blue family, from the brand) means **"you can click this" and nothing else**: primary buttons, text links, the active nav marker, focus rings, the selected form option.
+`--signal` (a pale prism cyan taken from the spectral gradient, per Eric's "one distinctive accent inspired by spectral light") means **"you can click this" and nothing else**: primary buttons, text links, the active nav marker, focus rings, the selected form option.
 Everything else is ink and paper: near-black, graphite, warm white, greys.
 - Spectral light exists only *inside the subject* (the canvas / its static fallback) and the logo artwork. It is never used for UI chrome, hairlines, icons, or text.
 - No other blue, cyan, orange or crimson anywhere in the UI.
@@ -53,10 +53,10 @@ Disclosure controls (from the brief): no algorithm names, gradient/kernel maths,
 ```css
 :root {
   /* Paper (brand dark foundation) */
-  --bg: #0A0A0F;              /* Void */
-  --surface: #111118;         /* Obsidian — panels */
-  --surface-alt: #15151D;     /* band between Obsidian and Graphite */
-  --surface-hover: #1A1A24;   /* Graphite */
+  --bg: #0B0B0C;              /* neutral almost-black (no blue tint) */
+  --surface: #141416;         /* muted neutral graphite — panels */
+  --surface-alt: #18181A;     /* alternate band */
+  --surface-hover: #1C1C1F;   /* hover graphite */
   --line: rgba(242,237,228,0.08);
   --line-strong: rgba(242,237,228,0.18);
 
@@ -67,10 +67,10 @@ Disclosure controls (from the brief): no algorithm names, gradient/kernel maths,
   --ink-ghost: rgba(242,237,228,0.06);  /* back-plane ghost type */
 
   /* Signal — the only "tap this" colour (brand Lumina Blue, lifted for AA on Void) */
-  --signal: #7FA2FF;
-  --signal-hover: #A9C0FF;
-  --signal-ink: #0A0A0F;      /* text on signal */
-  --signal-rgb: 127,162,255;
+  --signal: #8FDCE6;
+  --signal-hover: #BDEDF2;
+  --signal-ink: #0B0B0C;      /* text on signal */
+  --signal-rgb: 143,220,230;
 
   /* Spectrum — subject only (canvas + its SVG fallback) */
   --spectrum: linear-gradient(90deg,#E8820C,#F2C14E,#9BE3C3,#8FB0FF,#B79BFF);
@@ -161,3 +161,4 @@ Applications copy (draft) · Ánfer's role/city · Rob/Ulf bios not marked appro
 - Kept: ghost words, three-plane heroes and the Influence Field canvas (signature move, per the composition rules above).
 - No eyebrows: the rule in §0 and §4 about mono labels now applies to roles and form labels only, never to a line directly above a heading.
 - 2026-11-20: removed all pill badges ("Patent pending", "One influence ranking", "Measured inside the model", research tags) at Anfer's request.
+- 2026-11-20: palette aligned with Eric's brief: brand Void/Obsidian/Graphite had a blue tint, replaced by neutral #0B0B0C / #141416 / #1C1C1F; UI accent moved from Lumina Blue to a single spectral hue (#8FDCE6). Home H1 is now the site-wide question.

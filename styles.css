@@ -1,10 +1,10 @@
 /* Fold Artists — site styles. Spec: DESIGN.md (three planes · one signal colour · no middle sizes) */
 
 :root {
-  --bg: #0A0A0F;
-  --surface: #111118;
-  --surface-alt: #15151D;
-  --surface-hover: #1A1A24;
+  --bg: #0B0B0C;
+  --surface: #141416;
+  --surface-alt: #18181A;
+  --surface-hover: #1C1C1F;
   --line: rgba(242, 237, 228, 0.08);
   --line-strong: rgba(242, 237, 228, 0.18);
 
@@ -13,12 +13,12 @@
   --ink-3: #75716B;
   --ink-ghost: rgba(242, 237, 228, 0.055);
   --ink-rgb: 242, 237, 228;
-  --bg-rgb: 10, 10, 15;
+  --bg-rgb: 11, 11, 12;
 
-  --signal: #7FA2FF;
-  --signal-hover: #A9C0FF;
-  --signal-ink: #0A0A0F;
-  --signal-rgb: 127, 162, 255;
+  --signal: #8FDCE6;
+  --signal-hover: #BDEDF2;
+  --signal-ink: #0B0B0C;
+  --signal-rgb: 143, 220, 230;
 
   --error: #F08A7A;
   --success: #9BE3C3;
@@ -196,6 +196,7 @@ a:hover { color: var(--signal-hover); }
 
 .hero-grid { display: grid; gap: 40px; }
 .hero h1 { position: relative; z-index: 0; max-width: 15ch; }
+.hero h1.h1-wide { max-width: 23ch; }
 .hero .front-cluster {
   position: relative; z-index: 2;
   display: grid; grid-template-columns: minmax(0, 34rem) auto; align-items: end; justify-content: space-between; gap: 32px 48px;
