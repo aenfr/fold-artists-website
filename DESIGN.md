@@ -73,7 +73,7 @@ Disclosure controls (from the brief): no algorithm names, gradient/kernel maths,
   --signal-rgb: 143,220,230;
 
   /* Spectrum — subject only (canvas + its SVG fallback) */
-  --spectrum: linear-gradient(90deg,#E8820C,#F2C14E,#9BE3C3,#8FB0FF,#B79BFF);
+  --spectrum: linear-gradient(90deg,#DC1828,#DEB014,#9BE3C3,#8FB0FF,#B79BFF);
 
   /* Form feedback */
   --error: #F08A7A;
@@ -162,3 +162,4 @@ Applications copy (draft) · Ánfer's role/city · Rob/Ulf bios not marked appro
 - No eyebrows: the rule in §0 and §4 about mono labels now applies to roles and form labels only, never to a line directly above a heading.
 - 2026-11-20: removed all pill badges ("Patent pending", "One influence ranking", "Measured inside the model", research tags) at Anfer's request.
 - 2026-11-20: palette aligned with Eric's brief: brand Void/Obsidian/Graphite had a blue tint, replaced by neutral #0B0B0C / #141416 / #1C1C1F; UI accent moved from Lumina Blue to a single spectral hue (#8FDCE6). Home H1 is now the site-wide question.
+- 2026-11-20: logo back to the original stacked mark + wordmark (red FOLD, gold ARTISTS), colours refreshed (gold #BC9A0C -> #DEB014, red #B50000 -> #DC1828); horizontal lockup for nav/footer, stacked for the gate, mark-only icon. The spectrum now starts at the logo red and gold.
